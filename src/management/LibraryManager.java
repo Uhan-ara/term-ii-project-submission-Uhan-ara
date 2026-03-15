@@ -24,8 +24,8 @@ public class LibraryManager {
     public void searchBook(String title) {
 
         for (Universe u : universes) {
-            for (Series s : u.getSeriesList()) {
-                for (Book b : s.getBooks()) {
+            for (Series s : u.getSeriesList().values()) {
+                for (Book b : s.getBooks().values()) {
 
                     if (b.getTitle().equalsIgnoreCase(title)) {
                         System.out.println("Book found:");
