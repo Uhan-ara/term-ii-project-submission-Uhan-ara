@@ -23,7 +23,7 @@ public class Series {
     public void showBooks() {
         System.out.println("Series: " + name);
 
-        for (Book book : books.values) {
+        for (Book book : books.values()) {
             book.displayInfo();
             System.out.println();
         }
