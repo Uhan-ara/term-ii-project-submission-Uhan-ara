@@ -25,6 +25,10 @@ public class Series {
         }
     }
 
+    public ArrayList<Book> getBooks() {
+    return books;
+}
+
     public String getName() {
         return name;
     }
