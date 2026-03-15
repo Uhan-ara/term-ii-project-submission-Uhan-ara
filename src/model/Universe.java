@@ -1,16 +1,16 @@
 package model;
 
-import java.util.Hashmap;
+import java.util.HashMap;
 
 public class Universe {
 
     private String name;
-    private Hashmap<Series> seriesList;
+    private HashMap<String, Series> seriesList;
     private HashMap<String, Universe> connectedUniverses;
 
     public Universe(String name) {
         this.name = name;
-        seriesList = new Hashmap<>();
+        seriesList = new HashMap<>();
         connectedUniverses = new HashMap<>();
     }
 
